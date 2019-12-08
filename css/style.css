@@ -1,57 +1,80 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
-nav ul a,
-nav .brand-logo {
-  color: #444;
-}
-
-p {
-  line-height: 2rem;
-}
-
-.button-collapse {
-  color: #26a69a;
-}
-
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
+* {
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 1024px;
+  min-width: 350px;
+  margin: 0 auto;
+}
+
+.nav {
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.callout {
+  margin: 1rem auto;
+  background-color: #9dc4ff;
+  max-width: 840px;
+}
+
+.callout h1,
+h2,
+h3 {
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+}
+
+.callout p {
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
+  max-width: 800px;
+}
+
+.services {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services div {
+  margin: 0.5rem;
+  min-width: 350px;
+  max-width: 420px;
+  padding: 10px;
+}
+
+.services div img {
+  width: 100%;
+}
+
+.services div h1 {
+  margin: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.services div p {
+  margin: 0 0.5rem 0.5rem;
+}
+
+.footer {
+  background-color: #eaeaea;
+  padding: 0.5rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
